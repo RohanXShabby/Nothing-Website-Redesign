@@ -49,7 +49,7 @@ This project is a personal portfolio piece that demonstrates proficiency in mode
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/nothing-redesign.git
+   git clone https://github.com/RohanXShabby/Nothing-Website-Redesign
    ```
 
 2. **Navigate to project directory**
@@ -60,30 +60,53 @@ This project is a personal portfolio piece that demonstrates proficiency in mode
 3. **Install dependencies**
    ```bash
    npm install
-   # or
-   yarn install
    ```
 
 4. **Start development server**
    ```bash
    npm start
-   # or
-   yarn start
    ```
 
 5. **Open your browser**
    
-   Navigate to `http://localhost:3000` to view the application.
+   Navigate to `http://localhost:5173` to view the application.
 
 ## 🌐 Live Demo
 
-🔗 **[View Live Demo](your-demo-link-here)**
+🔗 **[View Live Demo](https://nothing-website-redesign.vercel.app/)**
 
 Experience the redesigned Nothing website with all animations and responsive features.
 
 ## 📱 Screenshots
 
-*Add screenshots of your project here showing desktop, tablet, and mobile views*
+<p align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="https://res.cloudinary.com/drwfctvfs/image/upload/v1756084759/Screenshot_2025-08-25_064808_gylstl.png" width="200"/><br>
+        <sub>Screen 1</sub>
+      </td>
+      <td align="center">
+        <img src="https://res.cloudinary.com/drwfctvfs/image/upload/v1756084900/Screenshot_2025-08-25_065043_ixahiy.png" width="200"/><br>
+        <sub>Screen 2</sub>
+      </td>
+      <td align="center">
+        <img src="https://res.cloudinary.com/drwfctvfs/image/upload/v1756084902/Screenshot_2025-08-25_065120_doprem.png" width="200"/><br>
+        <sub>Screen 3</sub>
+      </td>
+    </tr>
+    <tr>
+      <td align="center">
+        <img src="https://res.cloudinary.com/drwfctvfs/image/upload/v1756084902/Screenshot_2025-08-25_065104_bvjrm6.png" width="200"/><br>
+        <sub>Screen 4</sub>
+      </td>
+      <td align="center">
+        <img src="https://res.cloudinary.com/drwfctvfs/image/upload/v1756084902/Screenshot_2025-08-25_065130_evlqjl.png" width="200"/><br>
+        <sub>Screen 5</sub>
+      </td>
+    </tr>
+  </table>
+</p>
 
 ## ⚡ Performance Optimizations
 
@@ -92,15 +115,6 @@ Experience the redesigned Nothing website with all animations and responsive fea
 - Minified CSS and JavaScript bundles
 - Responsive images with proper sizing
 
-## 🤝 Contributing
-
-This is a personal portfolio project, but feedback and suggestions are always welcome!
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
 ## 📄 License
 
@@ -108,12 +122,12 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## ✍️ Author
 
-**[Your Name]**
+**Rohan Bisht**
 
-- 🌐 Portfolio: [Your Portfolio Link](your-portfolio-url)
-- 💼 LinkedIn: [Your LinkedIn Profile](your-linkedin-url)
-- 📧 Email: your.email@example.com
-- 🐱 GitHub: [@your-username](https://github.com/your-username)
+- 🌐 Portfolio: [Shabby Portfolio](https://www.rohanbisht.tech/)
+- 💼 LinkedIn: [Rohan (Shabby) Bisht](https://www.linkedin.com/in/rohan-bisht-7240a9246/)
+- 📧 Email: [your.email@example.com](mailto:rohan20ctbisht@gmail.com)
+- 🐱 GitHub: [@RohanXShabby](https://github.com/RohanXShabby)
 
 ---
 
