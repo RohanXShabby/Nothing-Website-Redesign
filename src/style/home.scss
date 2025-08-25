@@ -10,7 +10,7 @@
 @mixin hover-translate($distance: 2rem) {
   transition: var(--transition-smooth);
   transform: translateX(0);
-  
+
   &:hover {
     transform: translateX($distance);
     cursor: pointer;
@@ -265,11 +265,34 @@
 }
 
 // Image positioning classes
-.img-1 { top: 160%; left: -40%; width: 45rem; transform: rotate(-10deg); }
-.img-2 { top: -40%; left: -20%; width: 20rem; }
-.img-3 { top: 70%; right: 130%; width: 13rem; }
-.img-4 { top: -60%; right: -180%; width: 30rem; transform: rotate(-30deg); }
-.img-5 { top: 80%; left: 90%; width: 20rem; transform: rotate(-30deg); }
+.img-1 {
+  top: 160%;
+  left: -40%;
+  width: 45rem;
+  transform: rotate(-10deg);
+}
+.img-2 {
+  top: -40%;
+  left: -20%;
+  width: 20rem;
+}
+.img-3 {
+  top: 70%;
+  right: 130%;
+  width: 13rem;
+}
+.img-4 {
+  top: -60%;
+  right: -180%;
+  width: 30rem;
+  transform: rotate(-30deg);
+}
+.img-5 {
+  top: 80%;
+  left: 90%;
+  width: 20rem;
+  transform: rotate(-30deg);
+}
 
 /* ==========================================================================
    DESCRIPTION CARD SECTION
@@ -383,7 +406,7 @@
     }
 
     .triangle2 {
-      background-image: url("/public/images/koreanBoyPhone3.jpg");
+      background-image: url('/images/koreanBoyPhone3.jpg');
       filter: grayscale(1);
       position: absolute;
       top: 16%;
@@ -441,10 +464,22 @@
     }
 
     // Card positioning
-    #card-1 { top: 25%; left: 10%; }
-    #card-2 { top: 10%; left: 60%; }
-    #card-3 { top: 25%; left: 140%; }
-    #card-4 { top: 10%; left: 300%; }
+    #card-1 {
+      top: 25%;
+      left: 10%;
+    }
+    #card-2 {
+      top: 10%;
+      left: 60%;
+    }
+    #card-3 {
+      top: 25%;
+      left: 140%;
+    }
+    #card-4 {
+      top: 10%;
+      left: 300%;
+    }
   }
 
   // Showcase section
@@ -528,16 +563,16 @@
         width: 100%;
         height: 100%;
         grid-template-areas:
-          "top   top   top  top  top  "
-          "left left right right right "
-          "left left right right  right "
-          "left left right right  right "
-          "left left right right  right"
-          "left left right right  right"
-          "left left right right  right"
-          "bottom bottom bottom bottom bottom"
-          "bottom bottom bottom bottom  bottom"
-          "bottom bottom bottom bottom  bottom";
+          'top   top   top  top  top  '
+          'left left right right right '
+          'left left right right  right '
+          'left left right right  right '
+          'left left right right  right'
+          'left left right right  right'
+          'left left right right  right'
+          'bottom bottom bottom bottom bottom'
+          'bottom bottom bottom bottom  bottom'
+          'bottom bottom bottom bottom  bottom';
 
         .top {
           padding-left: 1rem;
@@ -608,11 +643,28 @@
   }
 
   // Image repositioning for desktop
-  .img-1 { top: 10%; left: -40%; width: 20rem; }
-  .img-2 { top: 25%; left: -10%; }
-  .img-3 { top: 35%; right: -20%; }
-  .img-4 { top: -30%; right: -65%; }
-  .img-5 { top: 80%; left: 90%; width: 17rem; }
+  .img-1 {
+    top: 10%;
+    left: -40%;
+    width: 20rem;
+  }
+  .img-2 {
+    top: 25%;
+    left: -10%;
+  }
+  .img-3 {
+    top: 35%;
+    right: -20%;
+  }
+  .img-4 {
+    top: -30%;
+    right: -65%;
+  }
+  .img-5 {
+    top: 80%;
+    left: 90%;
+    width: 17rem;
+  }
 
   // Description card adjustments
   .des-card {
@@ -711,10 +763,19 @@
         height: 20rem;
       }
 
-      #card-1 { top: 30%; }
-      #card-2 { left: 60%; }
-      #card-3 { top: 28%; left: 140%; }
-      #card-4 { left: 220%; }
+      #card-1 {
+        top: 30%;
+      }
+      #card-2 {
+        left: 60%;
+      }
+      #card-3 {
+        top: 28%;
+        left: 140%;
+      }
+      #card-4 {
+        left: 220%;
+      }
     }
 
     .showcase {

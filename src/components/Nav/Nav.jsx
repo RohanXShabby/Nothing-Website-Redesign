@@ -18,8 +18,8 @@ const Nav = () => {
     showNavBtns,
     setShowDetails,
     nothingRef,
-  addpageRefs,
-  addeviceRef
+    addpageRefs,
+    addeviceRef
   } = Nav_NavAnimation();
 
   return (
@@ -48,7 +48,7 @@ const Nav = () => {
             <div className="nav-grid">
               <div className="top">
                 <button
-                ref={  addeviceRef}  style={{opacity:"0"}}
+                  ref={addeviceRef} style={{ opacity: "0" }}
                   className="close-btn"
                   onClick={() => {
                     handleMenuOpening();
@@ -59,28 +59,30 @@ const Nav = () => {
               </div>
 
               <div className="left "   >
-                <Link  ref={addpageRefs}  style={{opacity:"0",
-               
+                <Link ref={addpageRefs} style={{
+                  opacity: "0",
+
                 }} to={"/"} className="Link" onClick={() => handleMenuOpening()}>HOME</Link>
-                <Link        to={'/shop/productinfo/phone3'}  ref={addpageRefs}  style={{opacity:"0"}} className="Link" onClick={() => {handleMenuOpening()
-            
+                <Link to={'/shop/productinfo/phone3'} ref={addpageRefs} style={{ opacity: "0" }} className="Link" onClick={() => {
+                  handleMenuOpening()
+
                 }}>NOTHING NEW</Link>
-                <Link  ref={addpageRefs} style={{opacity:"0"}}to={"/shop"} className="Link" onClick={() => handleMenuOpening()}>SHOP</Link>
-                <Link   ref={addpageRefs} style={{opacity:"0"}} to={"/shop/productinfo/Cmfphone2"} className="Link" onClick={() => handleMenuOpening()}>CMF</Link>
+                <Link ref={addpageRefs} style={{ opacity: "0" }} to={"/shop"} className="Link" onClick={() => handleMenuOpening()}>SHOP</Link>
+                <Link ref={addpageRefs} style={{ opacity: "0" }} to={"/shop/productinfo/Cmfphone2"} className="Link" onClick={() => handleMenuOpening()}>CMF</Link>
               </div>
 
               <div className="right">
                 <div className="right-top">
                   <div className="phone-div">
-                    <h3 ref={  addeviceRef}  style={{opacity:"0"}}>PHONE</h3>
+                    <h3 ref={addeviceRef} style={{ opacity: "0" }}>PHONE</h3>
                   </div>
 
                   <div className="phone-names-div">
-                    <Link ref={  addeviceRef}  style={{opacity:"0"}}  to={'/shop/productinfo/phone3'}className="phone-link">NOTHING PHONE (3)</Link>
-                    <Link  ref={  addeviceRef}  style={{opacity:"0"}} to={'/shop/productinfo/phone3apro'} className="phone-link">NOTHING PHONE 3A PRO</Link>
-                    <Link  ref={  addeviceRef}  style={{opacity:"0"}} to={'/shop/productinfo/phone3a'} className="phone-link">NOTHING PHONE 3A</Link>
-                    <Link  ref={  addeviceRef}  style={{opacity:"0"}} to={'/shop/productinfo/phone2aplus'} className="phone-link">NOTHING PHONE 2A PLUS</Link>
-                    <Link ref={  addeviceRef}  style={{opacity:"0"}}  to={'/shop/productinfo/phone2a'} className="phone-link">NOTHING PHONE 2A</Link>
+                    <Link ref={addeviceRef} style={{ opacity: "0" }} to={'/shop/productinfo/phone3'} className="phone-link">NOTHING PHONE (3)</Link>
+                    <Link ref={addeviceRef} style={{ opacity: "0" }} to={'/shop/productinfo/phone3apro'} className="phone-link">NOTHING PHONE 3A PRO</Link>
+                    <Link ref={addeviceRef} style={{ opacity: "0" }} to={'/shop/productinfo/phone3a'} className="phone-link">NOTHING PHONE 3A</Link>
+                    <Link ref={addeviceRef} style={{ opacity: "0" }} to={'/shop/productinfo/phone2aplus'} className="phone-link">NOTHING PHONE 2A PLUS</Link>
+                    <Link ref={addeviceRef} style={{ opacity: "0" }} to={'/shop/productinfo/phone2a'} className="phone-link">NOTHING PHONE 2A</Link>
                   </div>
 
                   <div className="phone-image-div"></div>
@@ -88,14 +90,14 @@ const Nav = () => {
 
                 <div className="right-bottom" >
                   <div className="audio-div">
-                    <h3 ref={  addeviceRef}  style={{opacity:"0"}} >AUDIO</h3>
+                    <h3 ref={addeviceRef} style={{ opacity: "0" }} >AUDIO</h3>
                   </div>
                   <div className="audio-name-div">
-                    <Link ref={  addeviceRef}  style={{opacity:"0"}}to={'/shop/productinfo/headphone1white'} className="audio-link">NOTHING HEADPHONE 1</Link>
-                    <Link ref={  addeviceRef}  style={{opacity:"0"}}to={'/shop/productinfo/earwhite'} className="audio-link">NOTHING EAR</Link>
-                    <Link ref={  addeviceRef}  style={{opacity:"0"}}to={'/shop/productinfo/cmfbudspro2'} className="audio-link">CMF BUDS PRO 2</Link>
-                    <Link ref={  addeviceRef}  style={{opacity:"0"}}to={'/shop/productinfo/cmfbuds2plus'} className="audio-link">CMF BUDS 2 PLUS</Link>
-                    <Link ref={  addeviceRef}  style={{opacity:"0"}}to={'/shop/productinfo/earopen'} className="audio-link">NOTHING EAR OPEN</Link>
+                    <Link ref={addeviceRef} style={{ opacity: "0" }} to={'/shop/productinfo/headphone1white'} className="audio-link">NOTHING HEADPHONE 1</Link>
+                    <Link ref={addeviceRef} style={{ opacity: "0" }} to={'/shop/productinfo/earwhite'} className="audio-link">NOTHING EAR</Link>
+                    <Link ref={addeviceRef} style={{ opacity: "0" }} to={'/shop/productinfo/cmfbudspro2'} className="audio-link">CMF BUDS PRO 2</Link>
+                    <Link ref={addeviceRef} style={{ opacity: "0" }} to={'/shop/productinfo/cmfbuds2plus'} className="audio-link">CMF BUDS 2 PLUS</Link>
+                    <Link ref={addeviceRef} style={{ opacity: "0" }} to={'/shop/productinfo/earopen'} className="audio-link">NOTHING EAR OPEN</Link>
                   </div>
                 </div>
               </div>

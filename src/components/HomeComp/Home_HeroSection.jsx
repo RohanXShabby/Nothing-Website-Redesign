@@ -86,6 +86,7 @@ const HeroSection = () => {
 
   return (
     <>
+
       <div className="section-one-home">
         <video autoPlay muted loop playsInline preload="none" id="heroVideo">
           <source src="/video/introVideo.mp4" type="video/mp4" />

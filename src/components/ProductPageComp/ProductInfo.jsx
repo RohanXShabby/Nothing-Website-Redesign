@@ -30,7 +30,6 @@ const ColorSelector = ({ colors, selectedImage, onSelect }) => (
 const ProductInfo = () => {
   const params = useParams();
   const navigate = useNavigate();
-
   const headingRefs = useRef([]);
   const brandRef = useRef(null);
   const imgRef = useRef(null);
@@ -88,12 +87,12 @@ const ProductInfo = () => {
         },
         position: "fixed",
         top: "45%",
-        left: "80%",
+        left: isMobile ? "50%" : "80%",
         x: "-50%",
         y: "-50%",
         xPercent: isMobile ? 0 : 2,
         yPercent: 10,
-        scale: isMobile ? 1.5 : 1.8,
+        scale: isMobile ? 0.8 : 1.8,
         zIndex: 19,
         ease: "none",             // no easing when scrubbed
       });

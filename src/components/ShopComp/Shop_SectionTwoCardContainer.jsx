@@ -40,9 +40,8 @@ const Shop_SectionTwoCardContainer = () => {
   });
 
   return (
-    <div className="Section-two-header w-screen   bg-black   ">
-      <section className='filterbar   ' >
-
+    <div className="Section-two-header w-screen bg-black">
+      <section className='filterbar' >
         <h1 onClick={() => setActiveCategory("all")}>SHOP ALL</h1>
         <h1 onClick={() => setActiveCategory("phone")}>PHONE</h1>
         <h1 onClick={() => setActiveCategory("CMF")}>CMF</h1>

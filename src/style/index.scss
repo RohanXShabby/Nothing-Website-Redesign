@@ -1,4 +1,4 @@
-@use "tailwindcss" as *;
+@use 'tailwindcss' as *;
 
 * {
   margin: 0;
@@ -12,7 +12,7 @@ body {
   height: 100%;
 
   background: #000000;
-  font-family: "NextGameExtraBold_font";
+  font-family: 'NextGameExtraBold_font';
 
   height: auto;
   // overflow-x: none;
@@ -23,16 +23,14 @@ body::-webkit-scrollbar {
 }
 
 @font-face {
-  font-family: "Nothing";
-  src: url("/fonts/Nothing_dotted.ttf") format("trueType");
+  font-family: 'Nothing';
+  src: url('/fonts/Nothing_dotted.ttf') format('trueType');
 }
 
 @font-face {
-  font-family: "NextGameExtraBold_font";
-  src: url("/fonts/Azonix-1VB0.otf") format("trueType");
+  font-family: 'NextGameExtraBold_font';
+  src: url('/fonts/Azonix-1VB0.otf') format('trueType');
 }
-
-
 
 //HOMEPAGE - NAV BAR
 
@@ -64,24 +62,30 @@ body::-webkit-scrollbar {
     align-items: center;
     backdrop-filter: blur(80px);
     background-color: rgba(10, 10, 10, 0.2);
-
+    white-space: nowrap;
     gap: 1.2rem;
     padding: 1rem;
 
-
+    @media (max-width: 600px) {
+      .join-btn {
+        font-size: 1.2rem;
+      }
+      .logo {
+        font-size: 1.2rem;
+      }
+    }
 
     .logo,
     button {
       text-transform: uppercase;
       color: #fff;
-      font-family: "Nothing";
+      font-family: 'Nothing';
       user-select: none;
       background: none;
       border: none;
       cursor: pointer;
       font-weight: 600;
       white-space: wrap;
-
     }
 
     .logo {
@@ -89,7 +93,7 @@ body::-webkit-scrollbar {
     }
 
     .join-btn {
-      font-family: "Nothing";
+      font-family: 'Nothing';
       font-weight: 600;
     }
 
@@ -100,7 +104,6 @@ body::-webkit-scrollbar {
       width: 100%;
       height: fit-content;
 
-
       .top {
         grid-area: top;
         display: flex;
@@ -110,11 +113,9 @@ body::-webkit-scrollbar {
         grid-row-end: 2;
 
         button {
-          font-family: "NextGameExtraBold_font";
+          font-family: 'NextGameExtraBold_font';
           letter-spacing: 0.5rem;
           color: #cc3628;
-
-
         }
       }
 
@@ -122,7 +123,6 @@ body::-webkit-scrollbar {
         display: flex;
         flex-direction: column;
         justify-content: center;
-
 
         color: #ffffff;
         grid-area: left;
@@ -133,15 +133,10 @@ body::-webkit-scrollbar {
 
         .Link {
           transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
-          font-family: "NextGameExtraBold_font";
-
-
-
+          font-family: 'NextGameExtraBold_font';
 
           font-size: 2rem;
-
         }
-
       }
 
       .right {
@@ -157,12 +152,10 @@ body::-webkit-scrollbar {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
 
-
         .right-top {
           display: grid;
           grid-template-rows: 0.3fr 1fr;
           align-items: center;
-
 
           .phone-div {
             // border-right: 0.1rem solid #fff;
@@ -185,13 +178,11 @@ body::-webkit-scrollbar {
             gap: 0.5rem;
 
             .phone-link {
-              font-family: "NextGameExtraBold_font";
+              font-family: 'NextGameExtraBold_font';
               transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
 
               transform: translateX(0);
-
             }
-
           }
         }
 
@@ -200,7 +191,6 @@ body::-webkit-scrollbar {
           grid-template-rows: 0.3fr 1fr;
           align-items: center;
 
-
           .audio-div {
             margin: 1rem 0;
             height: 100%;
@@ -208,9 +198,6 @@ body::-webkit-scrollbar {
             justify-content: start;
             align-items: center;
             font-size: 1.5rem;
-
-
-
           }
 
           .audio-name-div {
@@ -223,7 +210,7 @@ body::-webkit-scrollbar {
             gap: 0.5rem;
 
             .audio-link {
-              font-family: "NextGameExtraBold_font";
+              font-family: 'NextGameExtraBold_font';
               transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
 
               transform: translateX(0);
@@ -233,7 +220,6 @@ body::-webkit-scrollbar {
                 cursor: pointer;
               }
             }
-
           }
         }
       }
@@ -255,19 +241,15 @@ body::-webkit-scrollbar {
           white-space: nowrap;
           color: #cc3628;
 
-          font-family: "NextGameExtraBold_font";
+          font-family: 'NextGameExtraBold_font';
         }
       }
     }
   }
-
-
 }
 
 @media (min-width: 1024px) {
   .Nav_Parent_div {
-
-
     max-width: 98vw;
     max-height: 98vh;
 
@@ -290,17 +272,16 @@ body::-webkit-scrollbar {
 
         // background-color: #efe9e9;
         grid-template-areas:
-          "top   top   top  top  top  "
-          "left left right right right "
-          "left left right right  right "
-          "left left right right  right "
-          "left left right right  right"
-          "left left right right  right"
-          "left left right right  right"
-
-          "bottom bottom bottom bottom bottom"
-          "bottom bottom bottom bottom  bottom"
-          "bottom bottom bottom bottom  bottom";
+          'top   top   top  top  top  '
+          'left left right right right '
+          'left left right right  right '
+          'left left right right  right '
+          'left left right right  right'
+          'left left right right  right'
+          'left left right right  right'
+          'bottom bottom bottom bottom bottom'
+          'bottom bottom bottom bottom  bottom'
+          'bottom bottom bottom bottom  bottom';
 
         .top {
           grid-area: top;
@@ -310,7 +291,7 @@ body::-webkit-scrollbar {
           // background-color: #cc3628;
 
           button {
-            font-family: "NextGameExtraBold_font";
+            font-family: 'NextGameExtraBold_font';
             letter-spacing: 0.5rem;
           }
         }
@@ -325,17 +306,11 @@ body::-webkit-scrollbar {
           grid-area: left;
           border: none;
 
-
-
-
-
           .Link {
             transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
-            font-family: "NextGameExtraBold_font";
-
+            font-family: 'NextGameExtraBold_font';
 
             transform: translateX(0);
-
 
             font-size: 3.3rem;
 
@@ -358,23 +333,18 @@ body::-webkit-scrollbar {
           grid-template-columns: 1fr;
           grid-template-rows: 1fr 1fr;
 
-
           .right-top {
             display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: 1fr 3fr 2fr;
             align-items: center;
 
-
             .phone-div {
-
-
               margin: 0rem;
               height: 100%;
               display: flex;
               justify-content: center;
               align-items: center;
-
             }
 
             .phone-names-div {
@@ -387,7 +357,7 @@ body::-webkit-scrollbar {
               gap: 0.5rem;
 
               .phone-link {
-                font-family: "NextGameExtraBold_font";
+                font-family: 'NextGameExtraBold_font';
                 transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
 
                 transform: translateX(0);
@@ -397,7 +367,6 @@ body::-webkit-scrollbar {
                   cursor: pointer;
                 }
               }
-
             }
           }
 
@@ -416,9 +385,6 @@ body::-webkit-scrollbar {
               display: flex;
               justify-content: center;
               align-items: center;
-
-
-
             }
 
             .audio-name-div {
@@ -431,7 +397,7 @@ body::-webkit-scrollbar {
               gap: 0.5rem;
 
               .audio-link {
-                font-family: "NextGameExtraBold_font";
+                font-family: 'NextGameExtraBold_font';
                 transition: all 0.2s cubic-bezier(0.65, 0.05, 0.36, 1);
 
                 transform: translateX(0);
@@ -441,7 +407,6 @@ body::-webkit-scrollbar {
                   cursor: pointer;
                 }
               }
-
             }
           }
         }
@@ -453,7 +418,6 @@ body::-webkit-scrollbar {
           align-items: center;
           justify-content: center;
 
-
           h1 {
             font-size: 18rem;
             margin-top: 5.2rem;
@@ -461,7 +425,7 @@ body::-webkit-scrollbar {
             white-space: nowrap;
             color: #cc3628;
 
-            font-family: "NextGameExtraBold_font";
+            font-family: 'NextGameExtraBold_font';
           }
         }
       }
@@ -469,16 +433,12 @@ body::-webkit-scrollbar {
   }
 }
 
-
-
-
 //HOMEPAGE - Section 01
 .section-one-home {
   width: 100%;
   height: 100vh;
   position: fixed;
   pointer-events: none;
-  // overflow: hidden;
 
   #heroVideo {
     width: 100%;
@@ -493,34 +453,30 @@ body::-webkit-scrollbar {
   top: 48%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-
   pointer-events: none;
   user-select: none;
-
-
   text-align: center;
   line-height: 0.8;
-
   h1 {
     display: flex;
-
+    gap: 1.5vw;
     span {
-
-      font-family: "Azonix_font";
+      font-family: 'Azonix_font';
       font-weight: 800;
       color: #fff;
       margin-bottom: 1rem;
-
-      // background-color: #fff;
     }
   }
-
   .nothing-text,
   .explore-text {
-    font-size: 9.5vw;
+    font-size: 9vw;
     color: #ffffff;
-    font-family: "NextGameExtraBold_font";
+    font-family: 'NextGameExtraBold_font';
+  }
+}
+@media (max-width: 600px) {
+  .hero-title {
+    top: 80%;
   }
 }
 
@@ -536,12 +492,18 @@ body::-webkit-scrollbar {
   top: 30%;
   mix-blend-mode: difference;
   color: #fff;
-  font-family: "Nothing";
+  font-family: 'Nothing';
 
   .instruction {
     margin-bottom: 4rem;
     font-size: 10px;
     color: rgb(143, 143, 143);
+  }
+}
+/* For phones */
+@media (max-width: 600px) {
+  .instruction {
+    display: none;
   }
 }
 
@@ -554,7 +516,6 @@ body::-webkit-scrollbar {
   perspective: 500px;
   pointer-events: none;
   z-index: 9999;
-
 }
 
 .image {
@@ -564,7 +525,6 @@ body::-webkit-scrollbar {
   padding: 1rem;
   background-color: #ffffff14;
   backdrop-filter: blur(10px);
-
 }
 
 .image img {
@@ -572,46 +532,33 @@ body::-webkit-scrollbar {
   height: auto;
   object-fit: cover;
   aspect-ratio: 1 / 1;
-
 }
 
 .img-1 {
-
   top: 160%;
   left: -40%;
   width: 45rem;
   transform: rotate(-10deg);
-
 }
 
-
 .img-2 {
-
   top: -40%;
   left: -20%;
   width: 20rem;
-
-
 }
 
-
 .img-3 {
-
   top: 70%;
   right: 130%;
   width: 13rem;
-
 }
 
 .img-4 {
-
   top: -60%;
   right: -180%;
   width: 30rem;
   transform: rotate(-30deg);
-
 }
-
 
 .img-5 {
   top: 80%;
@@ -620,12 +567,11 @@ body::-webkit-scrollbar {
   transform: rotate(-30deg);
 }
 
-
 a {
   text-decoration: none;
   color: #fff;
   pointer-events: auto;
-  font-family: "Neue Montreal", sans-serif;
+  font-family: 'Neue Montreal', sans-serif;
 }
 
 .canvas-wrapper {
@@ -648,7 +594,6 @@ canvas {
   margin: 0;
 }
 
-
 @media (min-width: 1024px) {
   .hero-title {
     top: 90%;
@@ -656,7 +601,6 @@ canvas {
     h1 {
       span {
         font-size: 9vw;
-
       }
     }
   }
@@ -672,14 +616,13 @@ canvas {
     position: absolute;
     top: 30%;
     color: #fff;
-    font-family: "Nothing";
+    font-family: 'Nothing';
 
     .instruction {
       margin-bottom: 4rem;
       font-size: 10px;
       color: rgb(143, 143, 143);
     }
-
   }
 
   .container {
@@ -691,7 +634,6 @@ canvas {
     perspective: 1500px;
     pointer-events: none;
     z-index: 9999;
-
   }
 
   .image {
@@ -699,60 +641,41 @@ canvas {
     transform-style: preserve-3d;
     will-change: transform;
     padding: 1rem;
-
-
-
-
   }
-
 
   .image img {
     width: 100%;
     height: auto;
     object-fit: cover;
     aspect-ratio: 1 / 1;
-
   }
 
   .img-1 {
-
     top: 10%;
     left: -40%;
     width: 20rem;
     transform: rotate(-10deg);
-
   }
 
-
   .img-2 {
-
     top: 25%;
     left: -10%;
     width: 20rem;
-
-
   }
 
-
   .img-3 {
-
     top: 35%;
     right: -20%;
     width: 13rem;
-
   }
 
   .img-4 {
-
     top: -30%;
     right: -65%;
     width: 30rem;
-
   }
 
-
   .img-5 {
-
     top: 80%;
     left: 90%;
     width: 17rem;
@@ -767,31 +690,6 @@ canvas {
     pointer-events: auto;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 //HOMEPAGE - Section 02
 .des-card {
   padding: 6rem 1rem;
@@ -827,7 +725,6 @@ canvas {
   }
 
   .des-content {
-
     text-align: center;
     position: relative;
     word-break: break-all;
@@ -835,7 +732,6 @@ canvas {
     white-space: normal;
 
     h1 {
-
       font-size: 1.2rem;
       margin: 1rem 0;
 
@@ -854,16 +750,10 @@ canvas {
         font-size: 1.2rem;
       }
     }
-
-
-
-
   }
 }
 
-
 @media (min-width: 1024px) {
-
   .des-card {
     padding: 8rem 10rem 23rem 2rem;
     background-color: #000000;
@@ -897,7 +787,6 @@ canvas {
     }
 
     .des-content {
-
       text-align: left;
       position: relative;
       top: -3rem;
@@ -930,22 +819,14 @@ canvas {
         color: #000;
         margin-bottom: 1rem;
       }
-
-
     }
   }
 }
-
-
-
-
-
 
 //HOMEPAGE - Section 03
 .section3-mainContainer {
   width: 100%;
   height: 200vh;
-
 
   background-color: #000000;
   position: relative;
@@ -982,7 +863,7 @@ canvas {
         font-weight: 600;
         overflow: hidden;
         text-transform: uppercase;
-        font-family: "NextGameExtraBold_font";
+        font-family: 'NextGameExtraBold_font';
         // font-family: "Nothing";
 
         letter-spacing: 0.5rem;
@@ -1002,7 +883,7 @@ canvas {
     }
 
     .triangle2 {
-      background-image: url("/public/images/koreanBoyPhone3.jpg");
+      background-image: url('/images/koreanBoyPhone3.jpg');
 
       filter: grayscale(1);
 
@@ -1027,20 +908,13 @@ canvas {
       width: 101%;
       height: 100vh;
 
-
-
       background-color: #000000;
-
 
       z-index: 700;
       display: flex;
       justify-content: center;
       align-items: center;
-
-
     }
-
-
   }
 
   .section-fourth-home {
@@ -1070,50 +944,39 @@ canvas {
       object-fit: cover;
       transform-style: preserve-3d;
       perspective: 1000px;
-
     }
 
     #card-1 {
       top: 025%;
       left: 010%;
-
-
     }
 
     #card-2 {
       top: 10%;
-      left: 60%
+      left: 60%;
     }
 
     #card-3 {
       top: 25%;
       left: 0140%;
-
     }
 
     #card-4 {
       top: 10%;
       left: 0300%;
-
     }
-
-
   }
-
 
   .showcase {
     position: absolute;
 
     top: 280vh;
 
-
-
-
     z-index: 999;
 
     background-color: #000000;
 
-    font-family: "Nothing";
+    font-family: 'Nothing';
 
     display: flex;
     flex-direction: column;
@@ -1124,7 +987,6 @@ canvas {
     padding: 2rem;
 
     .card {
-
       position: absolute;
       top: 15%;
       width: 15rem;
@@ -1136,13 +998,9 @@ canvas {
     }
 
     p {
-
       text-align: justify;
       color: #fff;
-
     }
-
-
 
     // mix-blend-mode:difference;
     max-height: 75vh;
@@ -1164,26 +1022,18 @@ canvas {
 
     .link {
       font-size: 2rem;
-      font-family: "Nothing";
+      font-family: 'Nothing';
     }
-
-
   }
-
 }
 
-
 @media (min-width: 1024px) {
-
   .section3-mainContainer {
     width: 100vw;
     height: 300vh;
 
-
-
     .triangles-wrapper {
       top: 12%;
-
 
       .triangle1 {
         top: -3.3%;
@@ -1207,9 +1057,7 @@ canvas {
       }
 
       .triangle2 {
-
         top: 20%;
-
 
         height: 100vh;
         clip-path: polygon(0 100%, 0 0, 100% 30%, 100% 80%);
@@ -1217,11 +1065,8 @@ canvas {
         z-index: 700;
         background-size: cover;
 
-
-
         background-position: 0% 1%;
         object-fit: cover;
-
       }
 
       .triangle3 {
@@ -1229,16 +1074,10 @@ canvas {
         height: 100vh;
         //  position: fixed;
         background-color: #000000;
-
-
-
       }
-
-
     }
 
     .section-fourth-home {
-
       //  background-color: #cc3628;
       top: 120vh;
 
@@ -1249,10 +1088,6 @@ canvas {
         // margin-right: 50vw;
         will-change: transform;
         text-transform: uppercase;
-
-
-
-
       }
 
       .card {
@@ -1263,35 +1098,28 @@ canvas {
         object-fit: cover;
         transform-style: preserve-3d;
         perspective: 1000px;
-
       }
 
       #card-1 {
         top: 30%;
         left: 010%;
-
-
       }
 
       #card-2 {
         top: 10%;
-        left: 60%
+        left: 60%;
       }
 
       #card-3 {
         top: 28%;
         left: 0140%;
-
       }
 
       #card-4 {
         top: 10%;
         left: 0220%;
-
       }
-
     }
-
 
     .showcase {
       position: absolute;
@@ -1312,28 +1140,20 @@ canvas {
         // position: absolute;
         top: 15%;
 
-
-
         object-fit: cover;
         transform-style: preserve-3d;
         perspective: 1000px;
-
       }
 
       p {
-
         text-align: center;
 
         color: #fff;
-
       }
-
-
 
       // mix-blend-mode:difference;
       max-height: 75vh;
     }
-
 
     .footer {
       position: absolute;
@@ -1352,29 +1172,11 @@ canvas {
 
         &:hover {
           color: #cc3628;
-
         }
       }
-
     }
-
-
-
-
   }
-
 }
-
-
-
-
-
-
-
-
-
-
-
 
 //CURSOR STYLING
 #cursor-wrap {
@@ -1391,28 +1193,22 @@ canvas {
   width: 120px;
   height: 120px;
   transform: translate3d(0, 0, 0);
-  transition: width 0.2s, height 0.2s;
+  transition:
+    width 0.2s,
+    height 0.2s;
   user-select: none;
   pointer-events: none;
   display: none;
 }
 
-
 @media (min-width: 1024px) {
-
   .earbud-cursor {
     display: block;
   }
-
-
-
 }
-
 
 @media (min-width: 1024px) {
   .section-fourth-home {
-
-
     top: 300vh;
 
     .cometoplay-h1 {
@@ -1422,10 +1218,6 @@ canvas {
       // margin-right: 50vw;
       will-change: transform;
       text-transform: uppercase;
-
-
-
-
     }
 
     .card {
@@ -1436,33 +1228,27 @@ canvas {
       object-fit: cover;
       transform-style: preserve-3d;
       perspective: 1000px;
-
     }
 
     #card-1 {
       top: 30%;
       left: 010%;
-
-
     }
 
     #card-2 {
       top: 10%;
-      left: 60%
+      left: 60%;
     }
 
     #card-3 {
       top: 28%;
       left: 0140%;
-
     }
 
     #card-4 {
       top: 10%;
       left: 0220%;
-
     }
-
   }
 }
 
@@ -1478,4 +1264,11 @@ canvas {
   mix-blend-mode: difference;
   z-index: 9999;
   transform: translate3d(-50%, -50%, 0);
+}
+
+
+@media (pointer: coarse) or (hover: none) {
+  .custom-cursor {
+    display: none;
+  }
 }

@@ -1,6 +1,4 @@
-@import "tailwindcss";
-
-
+@use 'tailwindcss' as *;
 
 .maincontainer-shop {
   width: 100vw;
@@ -20,7 +18,6 @@
     justify-content: center;
     padding: 7rem 0;
 
-
     position: fixed;
 
     .hero-text {
@@ -30,7 +27,6 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 1.5rem;
-
 
       .scramble-text {
         display: flex;
@@ -47,11 +43,8 @@
 
         span {
           color: #fff;
-
         }
       }
-
-
 
       .hero-text {
         padding: 2rem;
@@ -68,7 +61,6 @@
         font-weight: 600;
         line-height: 1.2;
       }
-
 
       .hero-text-space {
         display: none;
@@ -94,7 +86,6 @@
         color: #aaa;
         max-width: 90%;
         line-height: 1.4;
-
       }
 
       .new-btn {
@@ -109,16 +100,12 @@
         text-transform: uppercase;
         transition: all 0.3s;
 
-
-
         &:hover {
           transform: translateX(5px);
         }
       }
     }
   }
-
-
 
   .Section-two-header {
     position: absolute;
@@ -130,7 +117,7 @@
       margin: auto;
       padding: 0.5vw 2vw;
       border-radius: 20px;
-      top: 5.4rem;
+      top: 13vh;
       cursor: pointer;
       display: flex;
       justify-content: space-evenly;
@@ -145,12 +132,9 @@
         color: #fff;
         white-space: nowrap;
       }
-
-
     }
 
     .cardcontainer {
-
       width: 100%;
       padding: 3rem 1rem;
       display: grid;
@@ -158,26 +142,19 @@
       gap: 2rem;
       background-color: #000000;
 
-
       .card {
         display: flex;
         flex-direction: column;
         gap: 1rem;
-
-
-
 
         .image-wrapper {
           width: 100%;
           aspect-ratio: 1/1.1;
           overflow: hidden;
 
-
           display: flex;
           align-items: center;
           justify-content: center;
-
-
 
           img {
             width: 100%;
@@ -208,13 +185,8 @@
         }
       }
     }
-
   }
-
 }
-
-
-
 
 @media (min-width: 768px) {
   .maincontainer-shop {
@@ -228,9 +200,7 @@
   }
 }
 
-
 @media (min-width: 1024px) {
-
   .maincontainer-shop {
     .Section-one-header {
       min-height: 90vh;
@@ -253,7 +223,6 @@
         }
 
         h1 {
-
           gap: 0.5rem;
           font-size: 6vw;
           line-height: 1;
@@ -277,8 +246,6 @@
       }
     }
 
-
-
     .Section-two-header {
       top: 95vh;
 
@@ -300,6 +267,5 @@
         }
       }
     }
-
   }
 }

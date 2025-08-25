@@ -16,6 +16,7 @@ const Home = () => {
       <SmoothScrollWrapper>
         <Description />
         {isHomepage && <Home_3section_slide />}
+        
       </SmoothScrollWrapper>
     </>
   )
