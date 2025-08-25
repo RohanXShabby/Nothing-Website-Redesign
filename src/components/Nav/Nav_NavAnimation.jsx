@@ -239,14 +239,7 @@ export const Nav_NavAnimation = () => {
 
 
   }, [showDetails]);
-
-
-
-
-
-
-
-
+  
   return {
     navRef,
     addRefs,
